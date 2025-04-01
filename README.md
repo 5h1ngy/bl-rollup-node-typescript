@@ -5,7 +5,9 @@
 ![Rollup](https://img.shields.io/badge/rollup-2.x-EC4A3F.svg?logo=rollup.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.x-3178C6.svg?logo=typescript)
 
-Un boilerplate avanzato per librerie Node.js con TypeScript e Rollup. Perfetto per creare pacchetti TypeScript ottimizzati, tipizzati e pronti per la distribuzione.
+An advanced boilerplate for Node.js libraries with TypeScript and Rollup. Perfect for creating optimized, typed TypeScript packages ready for distribution.
+
+**Topics:** `node` `typescript` `rollup` `library` `npm-package` `bundler` `es-modules` `offline-first` `documentation`
 
 ## 📋 Table of Contents
 - [Features](#-features)
@@ -18,31 +20,31 @@ Un boilerplate avanzato per librerie Node.js con TypeScript e Rollup. Perfetto p
 
 ## ✨ Features
 
-- 📦 Bundling ottimizzato con Rollup
-- 🔒 Type safety con TypeScript
-- 🔍 TypeScript linting con ESLint
-- 🎨 Formattazione del codice con Prettier
-- 🧪 Testing con Jest e TS-Jest
-- 📤 Supporto per import/export ES Modules
-- 💾 Funzionalità 100% offline
-- 🔄 Supporto per hot-reload durante lo sviluppo
-- 📊 Strumenti per generazione documentazione
-- 📝 Dichiarazioni di tipo TypeScript (.d.ts)
+- 📦 Optimized bundling with Rollup
+- 🔒 Type safety with TypeScript
+- 🔍 TypeScript linting with ESLint
+- 🎨 Code formatting with Prettier
+- 🧪 Testing with Jest and TS-Jest
+- 📤 Support for ES Modules import/export
+- 💾 100% offline functionality
+- 🔄 Support for hot-reload during development
+- 📊 Tools for documentation generation
+- 📝 TypeScript type declarations (.d.ts)
 
 ## 🗂️ Project Structure
 
 ```
 bl-rollup-node-typescript/
-├── dist/               # Output directory per il bundle
-├── src/                # Codice sorgente TypeScript
-│   ├── index.ts        # Entry point principale
-│   └── lib/            # Moduli e funzionalità della libreria
-├── test/               # File di test
-├── .eslintrc           # Configurazione ESLint
-├── rollup.config.js    # Configurazione Rollup
-├── jest.config.js      # Configurazione Jest
-├── tsconfig.json       # Configurazione TypeScript
-└── package.json        # Dipendenze e script del progetto
+├── dist/               # Output directory for the bundle
+├── src/                # TypeScript source code
+│   ├── index.ts        # Main entry point
+│   └── lib/            # Library modules and functionality
+├── test/               # Test files
+├── .eslintrc           # ESLint configuration
+├── rollup.config.js    # Rollup configuration
+├── jest.config.js      # Jest configuration
+├── tsconfig.json       # TypeScript configuration
+└── package.json        # Project dependencies and scripts
 ```
 
 ## 🚀 Project Setup
@@ -67,100 +69,100 @@ $ pnpm build
 
 ## 📦 Package Managers
 
-Questo progetto supporta diversi package manager. Ecco come utilizzare ciascuno:
+This project supports multiple package managers. Here's how to use each one:
 
 ### NPM
 
-NPM è il package manager predefinito per Node.js.
+NPM is the default package manager for Node.js.
 
-**Installazione NPM:**
+**Install NPM:**
 ```bash
-# Incluso con l'installazione di Node.js
+# Included with Node.js installation
 ```
 
-**Setup progetto con NPM:**
+**Setup project with NPM:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ npm install
 
-# Modalità sviluppo
+# Development mode
 $ npm run dev
 
-# Build della libreria
+# Build the library
 $ npm run build
 ```
 
-**Caratteristiche principali:**
-- 📚 Vasto ecosistema di pacchetti
-- 🔒 Struttura gerarchica di node_modules
-- 📋 Package.json per la gestione delle dipendenze
+**Key features:**
+- 📚 Vast package ecosystem
+- 🔒 Hierarchical node_modules structure
+- 📋 Package.json for dependency management
 
 ### Yarn
 
-Yarn è un'alternativa rapida, affidabile e sicura a NPM.
+Yarn is a fast, reliable, and secure alternative to NPM.
 
-**Installazione Yarn:**
+**Install Yarn:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g yarn
 ```
 
-**Setup progetto con Yarn:**
+**Setup project with Yarn:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ yarn
 
-# Modalità sviluppo
+# Development mode
 $ yarn dev
 
-# Build della libreria
+# Build the library
 $ yarn build
 ```
 
-**Caratteristiche principali:**
-- ⚡ Velocità di installazione superiore
-- 📦 Caching offline
-- 🔒 Maggiore sicurezza con checksum
-- 📋 yarn.lock per installazioni deterministiche
+**Key features:**
+- ⚡ Faster installation speeds
+- 📦 Offline caching
+- 🔒 Better security with checksums
+- 📋 yarn.lock for deterministic installations
 
 ### PNPM
 
-PNPM è un package manager efficiente in termini di spazio su disco.
+PNPM is a disk-space efficient package manager.
 
-**Installazione PNPM:**
+**Install PNPM:**
 ```bash
-# Installazione tramite NPM
+# Install using NPM
 $ npm install -g pnpm
 ```
 
-**Setup progetto con PNPM:**
+**Setup project with PNPM:**
 ```bash
-# Installazione dipendenze
+# Install dependencies
 $ pnpm install
 
-# Modalità sviluppo
+# Development mode
 $ pnpm dev
 
-# Build della libreria
+# Build the library
 $ pnpm build
 ```
 
-**Caratteristiche principali:**
-- 💾 Risparmio di spazio su disco tramite symlink
-- 🚀 Velocità di installazione elevata
-- 🔄 Storage con indirizzamento basato sul contenuto
-- 📋 pnpm-lock.yaml per blocco delle dipendenze
+**Key features:**
+- 💾 Disk space savings through symlinks
+- 🚀 Fast installation speeds
+- 🔄 Content-addressable storage
+- 📋 pnpm-lock.yaml for dependency lock
 
-### Confronto
+### Comparison
 
-| Funzionalità          | NPM     | Yarn    | PNPM    |
+| Feature               | NPM     | Yarn    | PNPM    |
 |-----------------------|---------|---------|---------|
-| Utilizzo disco        | Alto    | Alto    | Basso   |
-| Velocità installazione| Lenta   | Veloce  | Velocissima |
-| Installazioni parallele| Limitato| Sì      | Sì      |
-| Supporto workspaces   | Limitato| Buono   | Ottimo  |
-| Modalità offline      | Limitato| Buono   | Buono   |
-| Sicurezza             | Buona   | Migliore| Migliore|
+| Disk usage            | High    | High    | Low     |
+| Installation speed    | Slow    | Fast    | Fastest |
+| Parallel installations| Limited | Yes     | Yes     |
+| Workspace support     | Limited | Good    | Best    |
+| Offline mode          | Limited | Good    | Good    |
+| Security              | Good    | Better  | Better  |
 
 ## 📚 Resources
 
